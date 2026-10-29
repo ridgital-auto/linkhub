@@ -78,7 +78,6 @@ const GAME_BASE = "https://ridgital-auto.github.io/bdiHub/games/";
 const SEED_PROJECT = { id: "game-proj", name: "game", desc: "Kumpulan game kamera & web app anak" };
 const SEED_LINKS = [
   { id: "game-link-efek-kamera", name: "Efek Kamera", icon: "📸", url: GAME_BASE + "efek-kamera.html?v=2", desc: "Efek kamera cermin untuk Kiki — 105 efek wajah, tombol foto & GIF" },
-  { id: "game-link-nose-downhill", name: "Nose Downhill", icon: "🚵", url: GAME_BASE + "nose-downhill.html", desc: "Game kamera downhill sepeda gunung endless" },
   { id: "game-link-bucungs", name: "Bucungs", icon: "😮", url: GAME_BASE + "bucungs.html", desc: "Game runner dikontrol monyong (mulut)" },
   { id: "game-link-wajah-ceria", name: "Wajah Ceria", icon: "😊", url: GAME_BASE + "wajah-ceria.html", desc: "5 mini-game kamera wajah untuk anak" }
 ];
@@ -102,7 +101,7 @@ function seedGames(s) {
 }
 
 /* link seed yang sudah dihapus permanen oleh user — dibersihkan dari data lama too */
-const REMOVED_SEED_IDS = ["game-link-kontrol-mulut"];
+const REMOVED_SEED_IDS = ["game-link-kontrol-mulut", "game-link-nose-downhill"];
 
 /* tanam proyek "game" bawaan sekali saja saat aplikasi dimuat, sekaligus
    membersihkan link seed yang sudah dihapus. Dipanggil di sini (setelah semua
